@@ -91,11 +91,11 @@ def main():
     grade_student("Sameer", {0: "5", 3: "list"})
     for name, score in RESULTS.items():
         print(name, "scored", score, "grade", get_grade(score))
-    average=class_average()
+    average = class_average()
     print("Class average:", average)
-    print("Topper:", topper()) # highest score
+    print("Topper:", topper())  # highest score
     sat_summary = ", ".join(sorted(RESULTS))
-    print("Students who sat the exam:", sat_summary, "| total:", len(RESULTS))
+    print(f"Students who sat the exam: {sat_summary} | total: {len(RESULTS)}")
 
 
 if __name__ == "__main__":
